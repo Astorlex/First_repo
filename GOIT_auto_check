@@ -1,0 +1,49 @@
+# points = {
+#     (0, 1): 2,
+#     (0, 2): 3.8,
+#     (0, 3): 2.7,
+#     (1, 2): 2.5,
+#     (1, 3): 4.1,
+#     (2, 3): 3.9,
+# }
+
+# def calculate_distance(coordinates):
+#     if len(coordinates) < 2:
+#         return 0
+
+#     total_distance = 0
+#     for i in range(len(coordinates) - 1):
+#         edge = (min(coordinates[i], coordinates[i + 1]), max(coordinates[i], coordinates[i + 1]))
+#         total_distance += points.get(edge, 0)
+#         print(edge)
+#     return total_distance
+
+
+# coordinates = [0, 1, 3, 2, 0, 2, 3, 0, 2, 3]
+# result = calculate_distance(coordinates)
+# print(f"Общее расстояние полета дрона: {result}")
+
+price = int(input())
+coins = 0
+
+while price >= 25:
+    coins += 1
+    price -= 25
+    
+while price >= 10:
+    coins += 1
+    price -= 10
+    
+while price >= 5:
+    coins += 1
+    price -= 5
+
+while price >= 1:
+    coins += 1
+    price -= 1
+    
+print(coins)
+
+
+a = []
+a.
