@@ -196,15 +196,30 @@
 #     print(num)
 #     num = int(input())
 
-mult = 1
-for i in range(1, 11):
-   if i % 2 == 0:
-      continue
-   if i % 9 == 0:
-      break
-   mult *= i
-   print(mult)
-print(mult)
+# mult = 1
+# for i in range(1, 11):
+#    if i % 2 == 0:
+#       continue
+#    if i % 9 == 0:
+#       break
+#    mult *= i
+#    print(mult)
+# print(mult)
+
+n = int(input())
+i = 2
+
+while i < n:
+    n = n % i
+    if n % i == 0:
+        print(i)
+        break 
+    i += 1
+   
+     
+
+
+
 
 
 
